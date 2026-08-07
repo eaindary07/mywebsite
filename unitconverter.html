@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Unit Converter</h1>
+
+    <h2>Inches to Centimeters</h2>
+
+    <label>Enter Inches:</label><br><br>
+
+    <input type="number" id="inch" placeholder="Enter inches">
+
+    <button onclick="convert()">Convert</button>
+
+    <h3 id="answer"></h3>
+
+</div>
+
+<script>
+
+function convert(){
+
+    var inch = document.getElementById("inch").value;
+
+    // Validation
+    if(inch == ""){
+        document.getElementById("answer").innerHTML =
+        "Please enter the inches.";
+        return;
+    }
+
+    if(inch < 0){
+        document.getElementById("answer").innerHTML =
+        "Please enter a positive number.";
+        return;
+    }
+
+    var cm = inch * 2.54;
+
+    document.getElementById("answer").innerHTML =
+    "Equal to " + cm.toFixed(2) + " cm";
+
+}
+
+</script>
+<button onclick="window.location.href='index.html'">
+    Back
+</button>
+
+</body>
+</html>
