@@ -1,0 +1,10 @@
+{
+    "name": "Eaindary Min Naing Web App",
+    "short_name": "Eaindary App",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#eef7ff",
+    "theme_color": "#000080",
+    "description": "My personal resume and JavaScript web applications.",
+    "icons": []
+}
